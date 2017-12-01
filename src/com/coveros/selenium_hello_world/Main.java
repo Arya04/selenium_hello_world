@@ -48,7 +48,7 @@ public class Main {
 		catch(IOException ex){
 			System.out.println("Error reading file "+ fileName+"");
 		}
-		DesiredCapabilities capability = DesiredCapabilities.firefox();
+		DesiredCapabilities capability = DesiredCapabilities.chrome();
 		WebDriver driver = new RemoteWebDriver(new URL("http://172.31.2.108:4444/wd/hub"),capability);
 		
 		driver.get("http://"+DNS+":8080/hello-world-"+appVersion+"/");
