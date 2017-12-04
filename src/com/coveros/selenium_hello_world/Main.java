@@ -34,8 +34,8 @@ public class Main {
 			//Always wrap FileReader in BufferedReader.
 			BufferedReader bufferedReader = new BufferedReader(fileReader);
 			while((line=bufferedReader.readLine())!= null){
-				if(line.contains("Private IP Address")){
-					DNS = line.substring(20);
+				if(line.contains("172.31")){
+					DNS = line;
 				}
 			}
 			//Always close files.
